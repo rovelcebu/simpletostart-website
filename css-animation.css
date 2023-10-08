@@ -1,0 +1,82 @@
+body{
+    background-color: #333;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 12%;
+   
+}
+.container2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0%;
+   
+}
+
+.box{
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation-name: boxanimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    /*animation-direction: normal;*/
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.box2{
+    background: #0d28a0;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation-name: boxanimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    /*animation-direction: normal;*/
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+
+@keyframes boxanimation{
+    0%{
+        left: 0px;
+        background-color: #0a0c88;
+    }
+
+    25%{
+        background-color: aquamarine;
+        /*rotate: 360deg;*/
+
+    }
+
+    50%{
+        background-color: rgb(15, 196, 202);
+        /*rotate: 720deg;*/
+    }
+
+    55%{
+        background-color: chartreuse;
+        /*rotate: 750deg;*/
+    }
+
+    75%{
+        background-color: magenta ;
+        /*rotate: 1500deg;*/
+    }
+
+    100%{
+        left: 600px;
+        background-color: rgb(245, 239, 239);
+        /*rotate: 3000deg;*/
+    }
+    
+}
